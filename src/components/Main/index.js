@@ -1,4 +1,4 @@
-import { Form, Button, FormControl, Container } from "react-bootstrap";
+import { Form, FormControl, Container } from "react-bootstrap";
 import React from "react";
 import Api from "../../utils/Api";
 import ResultTable from "../ResultTable";
@@ -15,7 +15,7 @@ class Main extends React.Component {
   }
 
   searchEmployee() {
-    Api.getUsers().then((results) => {
+    Api.getEmployee().then((results) => {
       this.setState({ employee: results.data.results });
       this.handleFilteredEmployee();
     });
@@ -45,7 +45,7 @@ class Main extends React.Component {
       });
     }
     this.setState({
-      filterUsers: newFilterEmployee,
+      filterEmployee: newFilterEmployee,
     });
   };
 
@@ -53,17 +53,19 @@ class Main extends React.Component {
     return (
       <div>
         <Container className="justify-content-center">
-          <Form inline>
-            <FormControl
-              type="text"
-              placeholder="Search"
-              className="mr-sm-2"
-              value={this.state.search}
-              name="search"
-              onChange={this.handleInputChange}
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <br></br>
+          <p>
+            <Form inline>
+              <FormControl
+                type="text"
+                placeholder="Search Employee"
+                className="mr-sm-2"
+                value={this.state.search}
+                name="search"
+                onChange={this.handleInputChange}
+              />
+            </Form>
+          </p>
           <ResultTable employee={this.state.filterEmployee} />
         </Container>
         ;

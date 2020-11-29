@@ -5,7 +5,11 @@ function App() {
   return (
     <div>
       <Navbar bg="dark" expand="lg">
-        <Navbar.Brand href="#" style={{ color: "white" }}>
+        <Navbar.Brand
+          href="#"
+          style={{ color: "white" }}
+          className="text-center"
+        >
           Employee Directory
         </Navbar.Brand>
       </Navbar>
