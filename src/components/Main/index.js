@@ -1,7 +1,7 @@
 import { Form, Button, FormControl, Container } from "react-bootstrap";
 import React from "react";
 import Api from "../../utils/Api";
-import Table from "../Table/index";
+import ResultTable from "../ResultTable";
 
 class Main extends React.Component {
   state = {
@@ -64,7 +64,7 @@ class Main extends React.Component {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
-          <Table users={this.state.filterUsers} />
+          <ResultTable employee={this.state.filterEmployee} />
         </Container>
         ;
       </div>
