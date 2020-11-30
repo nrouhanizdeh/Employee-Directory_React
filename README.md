@@ -18,7 +18,7 @@ Deployed App link: https://blooming-beyond-83631.herokuapp.com/
 
 ## Installation
 
-1. Clone the repository 2. run `npm install` in termina
+1. Clone the repository 2. run `npm install` in terminal
 
 ## Contribute
 
