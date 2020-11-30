@@ -14,6 +14,8 @@ This app gives the user the ability to easily access employee information and se
 
 This React application demonstrate how our application's UI can be broken down into components, how state can be managed, and how to respond to user events.
 
+Deployed App link: https://blooming-beyond-83631.herokuapp.com/
+
 ## Installation
 
 1. Clone the repository 2. run `npm install` in termina
